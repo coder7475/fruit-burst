@@ -50,7 +50,8 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              title: "#121212",
+              
             },
           },
         },
@@ -60,11 +61,37 @@
     <!-- link to extra css file if needed  -->
     <link href="styles.css" rel="stylesheet">
 
-    
+
   </head>
   <!-- body  -->
   <body>
-    <header></header>
+    <header>
+        <!-- navbar - mobile -->
+        <div class="navbar bg-base-100 md:hidden">
+            <div class="flex-1">
+                <img src="./images/logo.png" alt="fruit logo" class="w-8 h-8">
+              <a class="btn btn-ghost text-base font-extrabold">Fruit Burst</a>
+            </div>
+            <div class="flex-none">
+              <button class="btn btn-square btn-ghost">
+                <i class="fa-solid fa-bars"></i></svg>
+              </button>
+            </div>
+        </div>
+        <!-- nav-bar for table and larger devices  -->
+        <div class="navbar bg-base-100 hidden md:flex">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+            </div>
+            <div class="flex-none gap-2">
+              <div class="form-control">
+                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+              </div>
+        
+            </div>
+        </div>
+
+    </header>
 
     <main></main>
 
