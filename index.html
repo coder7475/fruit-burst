@@ -65,18 +65,18 @@
   </head>
   <!-- body  -->
   <body>
-    <header class="md:mt-12">
+    <header class="md:mt-10">
         <!-- navbar - mobile -->
-        <div class="navbar md:bg-primary rounded-[600px] mx-auto md:max-w-screen-2xl md:flex-col xl:flex-row">
+        <div class="navbar md:bg-primary rounded-[600px] mx-auto md:max-w-screen-2xl md:flex-col xl:flex-row justify-around">
             
-                <ul class="hidden md:flex flex-1 gap-8">
-                    <li>Home 1</li>
-                    <li>Home 2</li>
-                    <li>Home 3</li>
-                    <li>Home 4</li>
+                <ul class="hidden md:flex flex-1 gap-8 text-white font-normal text-lg">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">All Fruits</a></li>
                 </ul>
             
-            <div class="flex-1">
+            <div class="flex-1 md:text-white md:text-5xl md:font-bold justify-center">
                 <img src="./images/logo.png" alt="fruit logo" class="w-8 h-8">
                 <a class="btn btn-ghost text-base font-extrabold">Fruit Burst</a>
             </div>
@@ -85,8 +85,9 @@
                 <i class="fa-solid fa-bars"></i></svg>
               </button>
             </div>
-            <form action="#" class="hidden md:flex flex-1">
-                <input type="search" name="search" id="search" placeholder="Searh Here" class="rounded-3xl p-2">
+            <form action="#" class="hidden md:flex flex-1 relative justify-end">
+                <input type="search" name="search" id="search" placeholder="Search Here" class="rounded-3xl p-2 pr-4">
+                <i class="fa-solid text-gray-400 border-none border-0 border-gray-50 fa-magnifying-glass absolute top-3 right-4"></i>
             </form>
         </div>
        
