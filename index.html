@@ -65,9 +65,9 @@
   </head>
   <!-- body  -->
   <body>
-    <header class="md:mt-10">
-        <!-- navbar - mobile -->
-        <div class="navbar md:bg-primary rounded-[600px] mx-auto md:max-w-screen-2xl md:flex-col xl:flex-row justify-around">
+    <header class="md:mt-10 mx-auto md:max-w-screen-2xl">
+        <!-- navbar  -->
+        <div class="navbar md:bg-primary rounded-[600px]  md:flex-col xl:flex-row justify-around">
             
                 <ul class="hidden md:flex flex-1 gap-8 text-white font-normal text-lg">
                     <li><a href="#">Home</a></li>
@@ -91,6 +91,38 @@
             </form>
         </div>
        
+        <!-- banner - carousel  -->
+        <div class="carousel max-w-screen-2xl mx-auto my-16">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./images/banner1.png" class="" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+
     </header>
 
     <main></main>
