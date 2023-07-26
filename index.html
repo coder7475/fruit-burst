@@ -173,38 +173,49 @@
       <section class="flex flex-col">
           
           <!-- deal-content  -->
-          <div>
+          <div class="flex flex-col lg:flex-row justify-between items-center">
             <!-- text  -->
-          <div>
-            <h2>Deal of the day</h2>
-            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <div class="flex flex-col gap-6">
+            <h2 class="text-3xl md:text-5xl font-bold lg:font-black md:text-left text-center">Deal of the day</h2>
+            <p class="w-4/5 md:text-left text-center text-base font-medium text-[#12121299]">Contrary to popular belief, is not simply random text.  It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
+
           <!-- countdown  -->
-          
           <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
               <div class="flex flex-col">
-                <span class="countdown font-mono text-4xl">
-                  <span style="--value:15;"></span>
-                </span>
-                days
+                <div class="flex flex-row gap-4 items-center">
+                  <span class="countdown text-5xl">
+                    <span style="--value:29;"></span>
+                  </span>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                Days
               </div> 
               <div class="flex flex-col">
-                <span class="countdown font-mono text-4xl">
-                  <span style="--value:10;"></span>
-                </span>
-                hours
+                <div class="flex flex-row gap-4 items-center">
+                  <span class="countdown text-5xl">
+                    <span style="--value:10;"></span>
+                  </span>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                Hours
               </div> 
               <div class="flex flex-col">
-                <span class="countdown font-mono text-4xl">
-                  <span style="--value:24;"></span>
-                </span>
-                min
+                <div class="flex flex-row gap-4 items-center">
+                  <span class="countdown text-5xl">
+                    <span style="--value:25;"></span>
+                  </span>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                Minutes
               </div> 
               <div class="flex flex-col">
-                <span class="countdown font-mono text-4xl">
-                  <span style="--value:50;"></span>
-                </span>
-                sec
+                <div class="flex flex-row gap-4 items-center">
+                  <span class="countdown text-5xl">
+                    <span style="--value:04;"></span>
+                  </span>
+                </div>
+                Seconds
               </div>
           </div>
           </div>
