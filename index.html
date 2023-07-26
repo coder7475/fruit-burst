@@ -52,6 +52,7 @@
             colors: {
               title: "#121212",
               primary: "#F85559",
+              para: '#12121299',
             },
           },
         },
@@ -170,20 +171,20 @@
     <main class="md:mt-10 mx-auto md:max-w-screen-2xl">
 
       <!-- deal of the day section  -->
-      <section class="flex flex-col">
+      <section class="flex flex-col m-0">
           
           <!-- deal-content  -->
           <div class="flex flex-col lg:flex-row justify-between items-center">
             <!-- text  -->
           <div class="flex flex-col gap-6">
             <h2 class="text-3xl md:text-5xl font-bold lg:font-black md:text-left text-center">Deal of the day</h2>
-            <p class="w-4/5 md:text-left text-center text-base font-medium text-[#12121299]">Contrary to popular belief, is not simply random text.  It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <p class="md:w-4/5 w-full md:text-left text-center text-base font-medium text-para">Contrary to popular belief, is not simply random text.  It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
 
           <!-- countdown  -->
-          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="grid grid-flow-col md:gap-4 gap-1 my-5 text-center auto-cols-max">
               <div class="flex flex-col">
-                <div class="flex flex-row gap-4 items-center">
+                <div class="flex flex-row md:gap-4 gap-1 items-center">
                   <span class="countdown text-5xl">
                     <span style="--value:29;"></span>
                   </span>
@@ -192,16 +193,16 @@
                 Days
               </div> 
               <div class="flex flex-col">
-                <div class="flex flex-row gap-4 items-center">
+                <div class="flex flex-row mid:gap-4 gap:1 items-center">
                   <span class="countdown text-5xl">
-                    <span style="--value:10;"></span>
+                    <span style="--value:15;"></span>
                   </span>
                   <i class="fa-solid fa-ellipsis-vertical"></i>
                 </div>
                 Hours
               </div> 
               <div class="flex flex-col">
-                <div class="flex flex-row gap-4 items-center">
+                <div class="flex flex-row mid:gap-4 gap-1 items-center">
                   <span class="countdown text-5xl">
                     <span style="--value:25;"></span>
                   </span>
@@ -210,7 +211,7 @@
                 Minutes
               </div> 
               <div class="flex flex-col">
-                <div class="flex flex-row gap-4 items-center">
+                <div class="flex flex-row md:gap-4 gap-1 items-center">
                   <span class="countdown text-5xl">
                     <span style="--value:04;"></span>
                   </span>
@@ -221,93 +222,85 @@
           </div>
           
           <!-- Details -->
-          <div>
+          
             <!-- grid container  -->
-            <div
-          class="my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
-        >
-          <!-- card  -->
-          <div
-            class="card w-64 bg-base-100 bg-gradient-to-b from-[#F4F4F4] to-white"
-          >
-            <figure class="px-10 pt-10">
-              <img
-                src="./images/tea-1.png"
-                alt="tea 1"
-                class="w-32 rounded-xl"
-              />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title text-2xl font-extrabold">Milk Tea</h2>
-              <p class="text-para">
-                Creamer could be replaced <br />by fresh milk
-              </p>
-            </div>
-          </div>
+            <div class="my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 w-full">
+              <!-- card  -->
+              <div class="card bg-base-100 bg-gradient-to-b from-[#F4F4F4] to-white">
+                <figure>
+                  <img
+                    src="./images/fruit6.png"
+                    alt="tea 1"
+                    class="p-10 rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center p-0 gap-4">
+                  <h2 class="card-title text-2xl font-bold">12.90$ - 18.85$</h2>
+                  <p class="text-para">
+                    Apples
+                  </p>
+                  <div class="rating rating-lg rating-half">
+                    <input type="radio" name="rating-10" class="rating-hidden" />
+                    <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" checked />
+                    <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                  </div>
+                  <!-- Open the modal using ID.showModal() method -->
+                  <button class="btn" onclick="my_modal_1.showModal()"><p class="text-primary ">Details</p></button>
+                  <dialog id="my_modal_1" class="modal w-4/5">
+                    <form method="dialog" class="modal-box">
+                      <figure>
+                        <img
+                          src="./images/fruit6.png"
+                          alt="tea 1"
+                          class=" rounded-xl"
+                        />
+                      </figure>
+                      <div class="card-body items-center text-center p-0">
+                        <h3 class="text-title text-4xl font-bold">Apples</h3>
+                        <p class="text-para">
+                          Professional employees are there for you to pick the most amazing and fresh fruits.
+                        </p>
+                        <div class="rating rating-lg rating-half">
+                          <input type="radio" name="rating-10" class="rating-hidden" />
+                          <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                          <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                          <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" checked />
+                          <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                          <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                          <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                          <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                          <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                          <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-1" />
+                          <input type="radio" name="rating-10" class="bg-primary mask mask-star-2 mask-half-2" />
+                        </div>
+                      <div class="modal-action flex justify-center">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn text-primary border-2 border-primary">Close</button>
+                        <button class="btn bg-primary text-white">Buy Now</button>
+                      </div>
+                    </form>
+                  </dialog>
+                  
+                </div>
+              </div>
 
-          <!-- card  -->
-          <div
-            class="card w-64 bg-base-100 bg-gradient-to-b from-[#F4F4F4] to-white"
-          >
-            <figure class="px-10 pt-10">
-              <img
-                src="./images/tea-2.png"
-                alt="tea 2"
-                class="w-32 rounded-xl"
-              />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title text-2xl font-extrabold">Black Tea</h2>
-              <p class="text-para">
-                Creamer could be replaced <br />by fresh milk
-              </p>
+        
+          
             </div>
-          </div>
-
-          <!-- card  -->
-          <div
-            class="card w-64 bg-base-100 bg-gradient-to-b from-[#F4F4F4] to-white"
-          >
-            <figure class="px-10 pt-10">
-              <img
-                src="./images/tea-3.png"
-                alt="tea 3"
-                class="w-32 rounded-xl"
-              />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title text-2xl font-extrabold">Lemon Tea</h2>
-              <p class="text-para">
-                Creamer could be replaced <br />by fresh milk
-              </p>
-            </div>
-          </div>
-
-          <!-- card  -->
-          <div
-            class="card w-64 bg-base-100 bg-gradient-to-b from-[#F4F4F4] to-white"
-          >
-            <figure class="px-10 pt-10">
-              <img
-                src="./images/tea-4.png"
-                alt="tea 4"
-                class="w-32 rounded-xl"
-              />
-            </figure>
-            <div class="card-body items-center text-center">
-              <h2 class="card-title text-2xl font-extrabold">Green Tea</h2>
-              <p class="text-para">
-                Creamer could be replaced <br />by fresh milk
-              </p>
-            </div>
-          </div>
-            </div>
-          </div>
+         
 
             <!-- button  -->
-          <div>
+          <!-- <div>
             <button class="btn btn-secondary bg-primary text-white md:text-lg font-bold">Shop All</button>
-          </div>
+          </div> -->
       </section>
 
     </main>
